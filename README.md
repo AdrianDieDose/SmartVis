@@ -43,8 +43,9 @@ spicetify apply
 ## Feedback
 If you encounter any issues or have suggestions for improving this extension, feel free to open an issue in the GitHub repository. Contributions are also welcome! Fork the repository, make your changes, and submit a pull request with your improvements.
 
-## Licanse
+## License
 This project is licensed under the MIT License. Feel free to use, modify, and distribute the code as per the terms of this license.
+
 
 
 
