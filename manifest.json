@@ -1,16 +1,9 @@
 {
   "name": "SmartVis",
-  "description": "Real-time audio visualizer for Spicetify using DOM bars, with BPM sync, diffenrent modes, and customizable colors.",
-  "main": "smartvis.js",
-  "preview": "screenshots/preview.png",
-  "readme": "README.md",
-  "authors": [
-    {
-      "name": "Adrian Duda",
-      "url": "https://github.com/AdrianDieDose"
-    }
-  ],
-  "tags": ["visualizer", "bpm", "music", "spicetify", "css"],
+  "description": "Real-time audio visualizer for Spicetify",
+  "author": "Adrian Duda",
+  "repo": "https://github.com/AdrianDieDose/SmartVis",
+  "main": "https://cdn.jsdelivr.net/gh/AdrianDieDose/SmartVis@main/smartvis.js",
+  "tags": ["audio", "visualizer", "spicetify", "bpm", "music", "css"],
   "version": "1.0.0"
 }
-
