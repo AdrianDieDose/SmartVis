@@ -1,7 +1,7 @@
 # SmartVis
 
 
-
+![SmartVis Screenshot](vis_screenshot.png)
 SmartVis is a real-time audio visualizer for Spicetify. It uses DOM-based bars to display the audio waveform and responds to BPM, volume, and pump modes.
 
 
