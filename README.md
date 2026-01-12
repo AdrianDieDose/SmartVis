@@ -4,7 +4,8 @@
 ![SmartVis Screenshot](vis_screenshot.png)
 SmartVis is a real-time audio visualizer for Spicetify. It uses DOM-based bars to display the audio waveform and responds to BPM, volume, and pump modes.
 
-
+## Playlist Developing
+https://open.spotify.com/playlist/73CkHT2WuNngp7m0d50MDl?si=dfe7a5e846fe41c6
 
 ## Features
 
@@ -40,6 +41,7 @@ If you encounter any issues or have suggestions for improving this extension, fe
 
 ## License
 This project is licensed under the MIT License. Feel free to use, modify, and distribute the code as per the terms of this license.
+
 
 
 
