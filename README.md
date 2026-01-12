@@ -30,7 +30,7 @@ spicetify config extensions smartvis.js
 Run the following command to uninstall the extension (note the - on the end):
 
 ```bash
-spicetify config extensions djinfo.mjs-
+spicetify config extensions smartvis.js-
 spicetify apply
 ```
 
@@ -39,6 +39,7 @@ If you encounter any issues or have suggestions for improving this extension, fe
 
 ## License
 This project is licensed under the MIT License. Feel free to use, modify, and distribute the code as per the terms of this license.
+
 
 
 
