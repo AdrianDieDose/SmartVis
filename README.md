@@ -22,23 +22,17 @@ SmartVis is a real-time audio visualizer for Spicetify. It uses DOM-based bars t
 
 ## Installation
 
-
+```bash
 spicetify config extensions smartvis.js
+```
 
 ## Uninstallation
 Run the following command to uninstall the extension (note the - on the end):
 
+```bash
 spicetify config extensions djinfo.mjs-
 spicetify apply
-You can also manually edit your config-xpui.ini file. Just remove the extensions' filename completely.
-Example:
-
-[AdditionalOptions]
-...
-extensions = autoSkipExplicit.js|shuffle+.js|trashbin.js
-Then run:
-
-spicetify apply
+```
 
 ## Feedback
 If you encounter any issues or have suggestions for improving this extension, feel free to open an issue in the GitHub repository. Contributions are also welcome! Fork the repository, make your changes, and submit a pull request with your improvements.
