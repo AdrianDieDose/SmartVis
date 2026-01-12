@@ -22,7 +22,6 @@ SmartVis is a real-time audio visualizer for Spicetify. It uses DOM-based bars t
 
 ## Installation
 
-```bash
 
 spicetify config extensions smartvis.js
 
