@@ -36,9 +36,13 @@
     /* ================= DOM INSERT ================= */
 
     function insertVisualizer() {
-        const rightBar = document.querySelector(".main-nowPlayingBar-right");
-        const playerControls = document.querySelector(".player-controls");
-        const playerBar = playerControls?.querySelector(".playback-bar");
+        //const rightBar = document.querySelector(".main-nowPlayingBar-right");
+        //const playerControls = document.querySelector(".player-controls");
+        //const playerBar = playerControls?.querySelector(".playback-bar");
+		
+		const rightBar = document.querySelector(".main-nowPlayingBar-right");
+		const playerControls = document.querySelector(".player-controls__buttons");
+		const playerBar = document.querySelector(".main-nowPlayingBar-center .playback-bar");
 
         if (!rightBar || !playerControls || !playerBar)
             return setTimeout(insertVisualizer, 500);
