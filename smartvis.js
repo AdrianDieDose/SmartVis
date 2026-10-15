@@ -7,10 +7,20 @@
     const PEAK = 2;
 
     const DIVS = [0.25, 0.5, 1];
-    const CUSTOM_COLORS = [
-        "#1db954", "#ff4d4d", "#4dd2ff",
-        "#b44dff", "#ffb84d", "#ffffff", "default"
-    ];
+//    const CUSTOM_COLORS = [
+//        "#1db954", "#ff4d4d", "#4dd2ff",
+//        "#b44dff", "#ffb84d", "#ffffff", "default"
+//    ];
+
+const CUSTOM_COLORS = [
+    "#C1121F", // Green
+    "#FF1744", // Red
+    "#00B8FF", // Blue
+    "#9C27FF", // Purple
+    "#FF9800", // Orange
+    "#FFFFFF", // White
+    "default"
+];
 
     /* ================= ENGINE ================= */
 
@@ -28,6 +38,7 @@
     /* ================= INIT ================= */
 
     function init() {
+    console.log("SmartVis (Marketplace-ready) loaded");
         if (!window.Spicetify || !Spicetify.Player)
             return setTimeout(init, 500);
         insertVisualizer();
@@ -35,21 +46,26 @@
 
     /* ================= DOM INSERT ================= */
 
-    function insertVisualizer() {
-        //const rightBar = document.querySelector(".main-nowPlayingBar-right");
-        //const playerControls = document.querySelector(".player-controls");
-        //const playerBar = playerControls?.querySelector(".playback-bar");
-		
-		const rightBar = document.querySelector(".main-nowPlayingBar-right");
-		const playerControls = document.querySelector(".player-controls__buttons");
-		const playerBar = document.querySelector(".main-nowPlayingBar-center .playback-bar");
+function insertVisualizer() {
+    const controls = document.querySelector('[data-testid="player-controls"]');
 
-        if (!rightBar || !playerControls || !playerBar)
-            return setTimeout(insertVisualizer, 500);
+    const rightBar = controls
+        ?.parentElement
+        ?.parentElement
+        ?.querySelector('[data-testid="volume-bar"]')
+        ?.parentElement
+        ?.parentElement;
 
-        if (document.getElementById("smartVisBtnWrapper")) return;
+    const playerBar = document.querySelector(
+        '[data-testid="progress-bar"]'
+    );
 
-        const spiceColor = getSpiceColor();
+    if (!rightBar || !controls || !playerBar)
+        return setTimeout(insertVisualizer, 500);
+
+    if (document.getElementById("smartVisBtnWrapper")) return;
+
+    const spiceColor = getSpiceColor();
 
         /* ---------- UI ---------- */
 
@@ -67,7 +83,7 @@
 
         const barOuter = createFlex("row");
         barOuter.id = "smartVisBarWrapper";
-        Object.assign(barOuter.style, { width: "84%", height: "6px" });
+        Object.assign(barOuter.style, { width: "100%", height: "6px" });
 
         const barInner = createFlex("row", "2px");
         Object.assign(barInner.style, { width: "100%", height: "100%" });
